@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>登录系统</title>
+        <link href="bootstrap.css" rel="stylesheet">
+        <link href="login.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            
+            <form class="form-signin" id="my-form" role="form">
+                <h2 class="form-signin-heading">欢迎登录</h2>
+                <input type="email" class="form-control" placeholder="登录账号">
+                <span class="text-danger"><p class="text-danger">登录账号不能为空</p></span>
+                <!-- <span class="text-danger"><p class="text-danger"></p></span> -->
+                <input type="password" class="form-control" placeholder="密码">
+                    <span class="text-danger">
+                        <p class="text-danger">密码不能为空</p>
+                        <!-- <p class="text-danger"></p> -->
+                    </span>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me">记住登录
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+            </form>
+        </div>
+        <script src="login.css"></script>
+    </body>
+</html>

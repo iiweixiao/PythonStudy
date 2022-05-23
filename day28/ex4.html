@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            /* 标签选择器 */
+            div {
+                width: 80px;
+                height: 80px;
+                background: #666;
+            }
+            /* ID选择器(ID属性值是唯一的，不能相同) */
+            #a {
+                width: 80px;
+                height: 80px;
+                background: #456;
+            }
+            /* 类选择器 */
+            .b {
+                width: 80px;
+                height: 80px;
+                background: #789;
+            }
+            /* 群组选择器 */
+            .c, .d {
+                width: 80px;
+                height: 80px;
+                background: rgb(50, 91, 133);
+            }
+            /* 后代选择器 */
+            .e {
+                width: 80px;
+                height: 80px;
+                border: 1px solid #123;
+            }
+            .e .f {
+                height: 30ox;
+                display: block;
+                background: pink;
+            }
+            /* 通配符选择器，对所有元素都有效 */
+            * {
+                padding: 0;  /*清除内边距*/
+                margin: 0;  /*清除外边距*/
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div id="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+        <div class="d">d</div>
+        <div class="e">e
+            <span class="f">f</span>
+        </div>
+    </body>
+</html>

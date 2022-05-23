@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>法宝</title>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>法宝列表</h1>
+    <ul>
+        <li id="a1">天马邀焰钟</li>
+        <li id="a2">流魂栖霞伞</>
+        <li id="a3">天网奇火石</li>
+        <li id="a4">混沌密林扇</li>
+        <li id="a5">好甜醋柳拂</li>
+    </ul>
+
+    <script>
+        $("<li id='a5'>新的法宝</li>").appendTo($('ul'));
+        $("ul").append($("<li id='a5'>新的宝宝</li>"));
+        $("#a3").remove();
+        $("#a1").hide()
+    </script>
+
+</body>
+</html>
